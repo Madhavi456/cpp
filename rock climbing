@@ -15,7 +15,6 @@ int countWays(int n, int i, int x) {
             ways += countWays(n, i + j, x);
         }
     }
-
     return ways;
 }
 
