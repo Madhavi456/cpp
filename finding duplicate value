@@ -1,0 +1,42 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,j,a[5],size;
+    cout<<"Enter array size:: ";
+    cin>>size;
+    
+    cout<<"\nEnter array elements :: ";
+
+    for(i=0; i<size; i++)
+        {
+            cout<<"  ";
+                cin>>a[i];
+        }
+        
+    
+  for(i=0;i<size;i++)
+  {
+  cout<<" "<<a[i]<<" ";
+  }
+
+  cout<<"\n\nDuplicate Values in Given Array are :: \n\n";
+
+  for(i=0; i<size; i++)
+   {
+    for(j=i+1;j<size;j++)
+    {
+    if(a[i]==a[j])
+    {
+    cout<<" "<<a[i]<<" ";
+    }
+   }
+   }
+
+  cout<<"\n";
+  
+  return 0;
+
+}
